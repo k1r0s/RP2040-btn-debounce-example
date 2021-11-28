@@ -1,12 +1,9 @@
 #include "pico/stdlib.h"
 
 #define BTN_PIN 3
-#define DEBOUNCE_THRESHOLD 50
+#define DEBOUNCE_THRESHOLD 100 // microseconds
 
 bool btn_state = false;
-int gpio_val = 0;
-int executed = 0;
-
 uint64_t last_ts = 0;
 
 void pin_rise_callback () {

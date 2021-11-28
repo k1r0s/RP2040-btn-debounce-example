@@ -19,3 +19,4 @@
 - Make sure you can run some of the examples here https://github.com/raspberrypi/pico-examples/
 - Clone this repo
 - Run the build.sh
+- Copy build/main.uf2 into the pico (plug it in debug mode and find it with `$ lsblk`)
